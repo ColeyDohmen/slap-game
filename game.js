@@ -46,27 +46,11 @@ function giveItem(itemKey){
     console.log(health.backpack)
 }
 
-function slap(){
-    health.characterHealth-= 1 + addMods()
+function attack(damage){
+    health.characterHealth-= damage + addMods()
     health.hit++
     checkHealth()
     
-
-    update();
-}
-
-function punch(){
-    health.characterHealth-= 5 + addMods()
-    health.hit++
-    checkHealth()
-    
-    update();
-}
-
-function kick(){
-    health.characterHealth-= 10 + addMods()
-    health.hit++
-    checkHealth()
 
     update();
 }
