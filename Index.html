@@ -11,7 +11,36 @@
     <link rel="stylesheet" href="game.css">
   </head>
   <body>
-      
+      <header>
+          <div class="container-fluid" id="draw-character">
+              <div class="row">
+              <div class="col-12">
+                <div class="card text-center justify-content-center shadow-lg rounded">
+                <h3>Name:<span id="nameJumbo"> </span></h3>
+                <h3>Health:<span id="health"></span></h3>
+                <h3>Hit:<span id="hit"></span></h3>
+                <div class="col-12">
+                    <img src="avatar.jpg" class="rounded shadow-lg" width="200px">
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-danger mt-3 mb-3" onclick="slap()">SLAP</button>
+                  <button class="btn btn-danger mt-3 mb-3" onclick="punch()">PUNCH</button>
+                  <button class="btn btn-danger mt-3 mb-3" onclick="kick()">KICK</button>
+                </div>
+                <div class="col-12" id="items">
+                  <button class="btn btn-primary mt-3 mb-3" onclick="giveItem('fire')">FIRE</button>
+                  <button class="btn btn-primary mt-3 mb-3" onclick="giveItem('water')">WATER</button>
+                  <button class="btn btn-primary mt-3 mb-3" onclick="giveItem('air')">AIR</button>
+                  <button class="btn btn-primary mt-3 mb-3" onclick="giveItem('earth')">EARTH</button>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </header>
+      <footer>
+      </footer>
    <script src="game.js"></script>
   </body>
 </html>
